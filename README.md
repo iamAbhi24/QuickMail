@@ -16,7 +16,7 @@ This GenAI-powered email generator helps you draft emails quickly, whether compo
 
 
 ## Demo
-https://github.com/user-attachments/assets/3b95df92-b8a1-4069-bc1d-9ca86c481d8f
+https://github.com/user-attachments/assets/4d3209ac-01d2-4c5e-8f66-aeaea769efe1
 
 
 
