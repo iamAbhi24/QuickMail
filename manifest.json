@@ -1,0 +1,47 @@
+{
+    "name": "QuickMail", 
+    "description": "It helps to draft emails very quickly. It can save your 30% to 40% of your time.", 
+    "version": "1.0.0", 
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "IMAGES/extention_logo.png"
+    },
+    "icons": {
+      "16": "IMAGES/extention_logo.png",
+      "48": "IMAGES/extention_logo.png",
+      "128": "IMAGES/extention_logo.png"
+    },
+    "host_permissions": [
+      "https://mail.google.com/*"
+    ],
+    "background": {
+      "service_worker": "JS/background.js",
+      "type": "module"
+    },
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "tabs",
+      "contextMenus"
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://mail.google.com/*"
+        ],
+        "js": [
+          "JS/content.js",
+          "JS/utility.js",
+          "JS/popup.js",
+          "JS/config.js"
+        ],
+        "css": [
+          "CSS/style.css"
+        ]
+      }
+    ]
+  }

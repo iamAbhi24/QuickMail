@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playwrite+CO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  width: 450px;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.header {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 0.5px solid #dedede;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background: #6422fd0f;
+}
+
+.sub_header {
+  font-style: normal;
+  font-size: 13px;
+  color: #0F4252;
+  margin-left: 5px;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.header-image {
+  width: 20px;
+  height: 20px;
+}
+
+.header-text {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  color: #0F4252;
+}
+
+.setting {
+  color: #686868;
+  margin-left: auto;
+  transition: transform 0.3s ease;
+  padding: 3px;
+}
+
+.setting:hover {
+  background: #6422fd27;
+  color: #6222FD;
+  border-radius: 50%;
+  transform: scale(1.2);
+  transform: rotate(50deg);
+  cursor: not-allowed;
+}
+
+/* #emailTitle
+{
+  font-size:16px;
+  font-weight: bold;
+  padding-left: 32px;
+  margin-right:32px;
+  position:inherit;
+  margin-bottom:40px;
+} */
+
+.content-wrapper {
+  font-family: "Poppins", serif;
+  width: 100%;
+  padding: 8px;
+}
+
+#emailTitleContainer {
+  display: flex;
+  margin-left: 6px;
+  margin-bottom: 16px;
+}
+
+#titleSVG {
+  font-size: 16px;
+
+}
+
+#email-title {
+  font-size: 15px;
+  margin-top: 2px;
+  padding-left: 8px;
+  font-weight: bolder;
+  font-family: "Poppins", serif;
+}
+
+.summaryContainer {
+  padding: 20px;
+  font-family: "Poppins", serif;
+  height: 400px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  background: #F6F6F6;
+
+}
+
+.disabledSummaryContainer {
+  padding: 32px;
+  margin-bottom: 40px;
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.summary-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.summary-list:before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #6222FD;
+}
+
+.summary-item {
+  position: relative;
+  padding: 8px 8px 8px 40px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  font-family: "Poppins", serif;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.summary-item:after {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: #6222FD;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+#sender {
+  border: 1px solid white;
+  padding-left: 5px;
+  padding-right: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  color: white;
+  /* background: #6422fd25; */
+  background: linear-gradient(to top right, #6222FD, #fd22eb);
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+#timestamp {
+  border: 1px solid white;
+  padding-left: 5px;
+  padding-right: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  color: rgb(255, 38, 168);
+  /* background: rgba(153, 205, 50, 0.103); */
+  background: linear-gradient(to top right, #fdad223f, rgba(232, 49, 80, 0.249));
+  margin-right: 8px;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  background: #f5f0ff;
+  border-top: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_text {
+  font-style: italic;
+  color: #323232;
+}
+
+/* Initial style for list items */
+/* ul li { */
+  /* opacity: 0; */
+  /* transform: translateY(20px); */
+  /* Start slightly below */
+  /* transition: opacity 0.5s ease, transform 0.5s ease; */
+/* } */
+
+/* Animated style */
+/* ul li.show { */
+  /* opacity: 1; */
+  /* transform: translateY(0); */
+  /* position: relative; */
+/* } */
